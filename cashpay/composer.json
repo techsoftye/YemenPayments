@@ -1,0 +1,28 @@
+{
+    "name": "techsoft/cashpay",
+    "description": "A Laravel package for the Tamkeen PHP SDK.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Techsoft\\Cashpay\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.0.2",
+        "guzzlehttp/guzzle": "^7.0",
+        "illuminate/support": "^9.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Techsoft\\Cashpay\\ServiceProvider"
+            ],
+            "aliases": {
+                "Tamkeen": "Techsoft\\Cashpay\\Facades\\Tamkeen"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
